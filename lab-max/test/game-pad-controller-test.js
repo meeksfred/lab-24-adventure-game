@@ -26,9 +26,9 @@ describe('testing gamePadCtrl', function(){
 
   describe('testing #movePlayer()', () => {
     it('should return an updated player position in the game', () => {
-      var movePlayerSpy = jasmine.createSpy('service.movePlayer()');
-      console.log('this.gamePadCtrl.moveDirection', this.gamePadCtrl.moveDirection);
-      expect(movePlayerSpy).toHaveBeenCalledWith(this.gamePadCtrl.movePlayer());
+      this.gamePadCtrl.movePlayer();
+      let result = this.gamePadCtrl.moveDirection;
+      expect(result).toEqual('up');
     });
   });
 });
