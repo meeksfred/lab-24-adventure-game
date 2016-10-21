@@ -20,6 +20,7 @@ function GamePadController($log, playerService){
   this.moveDirection = this.directions[0];
 
   this.movePlayer = function(){
+    $log.debug('movePlayer called');
     playerService.movePlayer(this.moveDirection)
     .then( location => {
       $log.debug(`player has moved to location: ${location}`);
