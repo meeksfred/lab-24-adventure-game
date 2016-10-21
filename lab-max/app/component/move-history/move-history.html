@@ -1,0 +1,9 @@
+<section class="move-history">
+  <ol>
+    <li ng-repeat="move in moveHistoryCtrl.history">
+      <h4> Turn: {{move.turn}} || Room: {{move.location}} </h4>
+      <p> <span> HP: {{move.hp}} </span> </p>
+      <p> {{move.desc}} </p>
+    </li>
+  </ol>
+</section>

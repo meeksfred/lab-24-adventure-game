@@ -5,3 +5,13 @@ html, body {
   width: 100%;
   height: 100%;
 }
+
+body {
+  background-color: $app-tertiary;
+  font-family: $app-font;
+
+  h1 {
+    text-align: center;
+    color: $app-black;
+  }
+}

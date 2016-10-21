@@ -1,0 +1,9 @@
+@import "theme";
+
+.game-pad {
+  padding: 1%;
+
+  .game-pad-button {
+    background-color: $app-secondary;
+  }
+}

@@ -1,0 +1,25 @@
+@import "theme";
+
+.player-stats {
+  background-color: $app-primary;
+  font-family: $app-font;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 15px;
+  border: 3px solid $app-black;
+
+  .player-stats-name {
+    color: $app-black;
+    font-weight: bold;
+  }
+
+  .player-stats-hp {
+    color: $app-success;
+    font-size: 1.5em;
+  }
+
+  .player-stats-location {
+    color: $app-disabled;
+    font-size: 1.5em;
+  }
+}
